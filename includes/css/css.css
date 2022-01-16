@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --rotulo: 'Permanent Marker', cursive;
+    --color-texto: rgba(0, 245, 255, 1);
+    --encabezado: 'Merriweather', serif;
+    --verde-oscuro: darkgreen;
+    --naranja: rgb(252, 168, 42);
+}
+
+body {
+    margin: 0;
+}
+
+#logo {
+    font-family: var(--rotulo);
+    color: var(--verde-oscuro);
+    font-size: 4em;
+    margin: .2em 0 0 0;
+}
+
+.banner {
+    text-align: center;
+    line-height: 3em;
+    margin-bottom: .75em;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#cabecera p a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--verde-oscuro);
+    border: 1px solid var(--verde-oscuro);
+    padding: 0.3em .5em;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: .9em;
+}
+
+.subtitulo {
+    margin: 0;
+    font-family: var(--rotulo);
+}
+
+.decoracion_up {
+    height: 1em;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(0, 245, 255, 1) 0%, rgba(0, 244, 253, 1) 1%, rgba(0, 238, 245, 0) 52%, rgba(0, 212, 255, 0) 100%);
+}
+
+.decoracion_down {
+    height: 1em;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 245, 255, 1) 0%, rgba(0, 244, 253, 1) 1%, rgba(0, 238, 245, 0) 52%, rgba(0, 212, 255, 0) 100%);
+}
+
+#lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(225 225 225);
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+section li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 10em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section li i {
+    font-size: 7em;
+    margin: auto;
+}
+
+section li p {
+    font-size: .9em;
+    height: 5.75em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.down {
+    display: none;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.encabezado {
+    font-family: var(--encabezado);
+    font-weight: 700;
+    font-size: 2em;
+    padding: .1em 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background-color: var(--naranja);
+}
+
+#index {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#tabla {
+    margin: 1em 0;
+}
+
+#tabla i:hover {
+    color: red;
+}
+
+td {
+    text-align: center;
+}
+
+.formulario {
+    padding: .5em;
+    font-family: var(--encabezado);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border-color: var(--verde-oscuro);
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number] {
+    border-radius: 5px;
+    width: 15em;
+    font-size: .9em;
+}
+
+input[type=submit],
+button {
+    background-color: var(--verde-oscuro);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--verde-oscuro);
+}
+
+input[type=submit]:hover,
+button:hover,
+#cabecera p a:hover {
+    color: var(--verde-oscuro);
+    background-color: white;
+    border-color: var(--verde-oscuro);
+}
+
+input[type=submit],
+.entrar {
+    margin: 1em auto 0 auto;
+    font-size: 1.2em;
+    padding: 0.3em 1.5em;
+    font-weight: 700;
+}
+
+button {
+    padding: .15em .5em;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal input {
+    margin: .5em 0;
+}
+
+#verificacion input {
+    margin: 0 .5em;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.botones button {
+    margin: .1em 1em;
+}
+
+.desplegable select {
+    font-size: 1.2em;
+    border-radius: 5px;
+    width: 15em;
+    padding: 0 .25em;
+    margin: 0 1em;
+    background-color: white;
+}
+
+#gestion {
+    flex-direction: column;
+}
+
+#gestion select,
+#gestion input,
+#gestion td,
+#gestion button,
+#verificacion label,
+#verificacion input,
+#verificacion button {
+    font-size: 1em;
+}
+
+#gestion td,
+#verificacion label {
+    padding: .25em 0;
+}
+
+#gestion td {
+    text-align: left;
+}
+
+#gestion td select {
+    margin: 0;
+}
+
+#gestion button:hover,
+.desplegable button:hover {
+    background-color: rgb(225 225 225);
+}
+
+.perfil {
+    margin: 1em auto;
+}
+
+.perfil td {
+    font-size: .9em;
+    padding: 0 1em;
+}
+
+.acceso {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.dataTables_length,
+.dataTables_filter {
+    margin: 0 10%;
+}
+
+.dataTables_paginate {
+    margin: .5em 10% 0 0;
+}
+
+.desplegable {
+    padding: 1em;
+    background-color: rgb(225 225 225);
+    ;
+    margin: .5em auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.desplegable button {
+    font-size: 1.2em;
+}
+
+fieldset h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: .25em auto .75em auto;
+    font-size: .63em;
+    background-color: rgb(225 225 225);
+    padding: .35em .25em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+fieldset a {
+    color: var(--verde-oscuro);
+}
+
+fieldset a :hover {
+    color: rgb(226, 2, 2);
+}
+
+.pie {
+    color: white;
+    align-self: auto;
+    box-sizing: content-box;
+}
+
+.pie ul {
+    background-color: var(--naranja);
+    margin: .45em 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+    padding: 0;
+}
+
+.pie ul li {
+    display: inline-flex;
+    padding: 0px 3em;
+    align-self: auto;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.pie ul li p {
+    align-self: auto;
+    align-content: center;
+}
+
+@media screen and (max-width: 610px) {
+    #index {
+        flex-direction: column;
+        align-content: space-around;
+    }
+    #lista {
+        flex-direction: column;
+        align-content: space-around;
+    }
+    section li {
+        padding: 0 0 3em 0;
+    }
+    section li i {
+        font-size: 8.5em;
+    }
+    .right {
+        display: none;
+    }
+    .down {
+        display: block;
+    }
+    .perfil td {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: .5em;
+    }
+    .desplegable,
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    td {
+        align-content: center;
+        text-align: center;
+    }
+    .perfil button,
+    .desplegable button {
+        width: 5em;
+    }
+    .desplegable button,
+    .desplegable select {
+        margin: .3em;
+        max-width: 13em;
+    }
+    #boton_baja,
+    #gestion button {
+        width: auto;
+    }
+    .tabla {
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    .tabla button {
+        height: 1.75em;
+        min-width: 11em;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .pie ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .pie ul li {
+        line-height: 1em;
+        height: 2.5em;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .subtitulo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #logo {
+        font-size: 3em;
+    }
+    .encabezado {
+        font-size: 1em;
+    }
+    legend,
+    label,
+    input[type=submit] {
+        font-size: .75em;
+    }
+}
