@@ -1,6 +1,6 @@
-#<h1> https://fideliza.ciberweb.com/ </h1>
+<h1> https://fideliza.ciberweb.com/ </h1>
 <h2>Aplicación para programa de fidelización de clientes</h2><br>
-<h2>This is a web applicarion for a loyalty program</h2><br>
+<h2>Web application for a loyalty program</h2><br>
 <p>Aplicación web diseñada para un negocio imaginario que promete incrementar la cantidad de clientes
 de las empresas interesadas a través de un programa de fidelidad. Funciona así: Las empresas ofrecen devolver a los clientes
 cierto porcentaje sobre el precio de determinados productos para que los clientes acumulen el importe en un monedero virtual
