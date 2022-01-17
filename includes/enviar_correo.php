@@ -14,10 +14,10 @@ function enviar_correo($direccion, $apellidos, $asunto, $mensaje){
         //Server settings
         $mail->SMTPDebug  = 0;//SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'host.ciberweb.com';                     //Set the SMTP server to send through
+        $mail->Host       =  //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'fideliza';                     //SMTP username
-        $mail->Password   = 'fideliza69@';                               //SMTP password
+        $mail->Username   =  //SMTP username
+        $mail->Password   =  //SMTP password
         $mail->SMTPSecure = 'tls';//PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 587;          
         $mail->CharSet    = 'UTF-8';                          //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
