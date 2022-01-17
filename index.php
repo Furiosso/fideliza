@@ -36,127 +36,24 @@
             $("#dialog-perfil").dialog({
                 modal: true,
                 width: 325
-            })
-        //     ,
-        //         buttons: {
-        //             Guardar: function () {
-        //                 var nombre = $('#nombre').val();
-        //                 var apellidos = $('#apellidos').val();
-        //                 var dni = $('#dni2').val();
-        //                 var email = $('#email').val();
-        //                 var telefono = $('#telefono').val();
-        //                 var pass = $('#pass2').val();
-        //                 var pass2 = $('#pass3').val();
-        //                 if(pass != pass2){
-        //                     alert("La segunda contraseña que has introducido no coincide con la primera. Vuelve a intentarlo");
-        //                 }else{
-        //                     $.ajax({
-        //                         method: "POST",
-        //                         url: "./includes/crear_perfil.php",
-        //                         data: {nombre: nombre, apellidos: apellidos, dni: dni, pass: pass, email: email, telefono: telefono}
-        //                     }).done( function(data){
-        //                         $('#legend1').html(data);
-        //                         $('#legend2').html('Acceso a empresas');
-        //                         if(data == 'Acceso a clientes'){
-        //                             $("#correo").dialog({
-        //                                 modal: true,
-        //                                 width: 325
-        //                             });
-        //                         }
-        //                     }); 
-        //                     $(this).dialog("close");
-                           
-        //                 }                                       
-        //             }
-        //         }
-        //     });                         
+            })                          
         };
         function alta_comercios(){
             $("#dialog-comercio").dialog({
                 modal: true,
-                width: 325
-                // buttons: {
-                //     Guardar: function () {
-                //         var empresa = $('#empresa').val();
-                //         var nif = $('#nif2').val();
-                //         var email = $('#email2').val();
-                //         var telefono =$('#telefono2').val();
-                //         var direccion_postal = $('#direccion_postal').val();
-                //         var direccion_fiscal = $('#direccion_fiscal').val();
-                //         var pass = $('#pass4').val();
-                //         var pass2 = $('#pass5').val();
-                //         if(pass != pass2){
-                //             alert("La segunda contraseña que has introducido no coincide con la primera. Vuelve a intentarlo");
-                //         }else{
-                //             $.ajax({
-                //                 method: "POST",
-                //                 url: "./includes/crear_comercio.php",
-                //                 data: {empresa: empresa, nif: nif, email: email, pass: pass, telefono: telefono, direccion_postal: direccion_postal, direccion_fiscal: direccion_fiscal}
-                //             }).done(function(data){
-                //                 $('#legend2').html(data);
-                //                 $('#legend1').html('Acceso a clientes');
-                //                 if(data == 'Acceso a empresas'){
-                //                     $("#correo").dialog({
-                //                         modal: true,
-                //                         width: 325
-                //                     });
-                //                 }
-                //             }); 
-                //             $(this).dialog("close"); 
-                //         }                                       
-                //     }
-                // }
+                width: 325           
             });                         
         }
-        // function acceso(flag){
-        //     event.preventDefault();
-        //     switch(flag){
-        //         case 1:
-        //             var dni = $('#dni').val();
-        //             var pass = $('#pass').val();
-        //             $.ajax({
-        //                 method: "POST",
-        //                 url: "./includes/acceso_compradores.php",
-        //                 data: {dni: dni, pass: pass}
-        //             }).done(function (data){
-        //                 switch(data){
-        //                     case '1':
-        //                         window.location.href = "./gestion_usuarios.php";
-        //                         break;
-        //                     default:    
-        //                         $('#legend1').html(data);
-        //                         $('#legend2').html('Acceso a empresas');
-        //                         break;
-        //                 }
-        //             }); 
-        //             break;
-        //         case 2:
-        //             var nif = $('#nif').val();
-        //             var pass = $('#pass1').val(); 
-        //             $.ajax({
-        //                 method: "POST",
-        //                 url: "./includes/acceso_comercios.php",
-        //                 data: {nif: nif, pass: pass}
-        //             }).done(function (data){
-        //                 switch(data){
-        //                     case '1':
-        //                         window.location.href = "./gestion_comercios.php";
-        //                         break;
-        //                     default:  
-        //                         $('#legend2').html(data);
-        //                         $('#legend1').html('Acceso a clientes');
-        //                 }
-        //             });  
-        //             break;
-        //     }
-        // }
+        
+      // Las funciones que utilizan el método submit tienen que cargarse una vez esté el documento listo para 
+      // cargar correctamente el escuhador del evento. Se podría evitar con otro tipo de eventos como click
+      // pero en este caso es necesario submit para que funcionen los atibutos de formulario tales como required o pattern
+  
     $(document).ready(function(){
         $('#acceso1').submit(function (e) { 
             e.preventDefault();
             var dni = $('#dni').val();
-            var pass = $('#pass').val();  
-            console.log('funciona');
-                
+            var pass = $('#pass').val();                
             $.ajax({
                 method: "POST",
                 url: "./includes/acceso_compradores.php",
